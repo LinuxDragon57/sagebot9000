@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    
+    <category>
+	    <pattern>HI</pattern>
+	    <template>
+	        Greetings, noble traveler of the digital realm! Before we embark on
+	        our epic quest to discover your destined career path, I must know:
+	        "By what magnificent moniker are you known in the annals of history?"
+	    </template>
+    </category>
+    
+    <category>
+        <pattern>HELLO</pattern>
+        <template><srai>HI</srai></template>
+    </category>
+    
+    <category>
+        <pattern>YO</pattern>
+        <template><srai>HI</srai></template>
+    </category>
+    
+    <category>
+        <pattern>WHAT UP</pattern>
+        <template><srai>HI</srai></template>
+    </category>
+    
+    <category>
+        <pattern>HULLO</pattern>
+        <template><srai>HI</srai></template>
+    </category>
+    
+    <category>
+        <pattern>HOWDY</pattern>
+        <template><srai>HI</srai></template>
+    </category>
+    
+    <category>
+        <pattern>HOWDY *</pattern>
+        <template><srai>HI</srai></template>
+    </category>
+    
+    <category>
+        <pattern>GREETINGS</pattern>
+        <template><srai>HI</srai></template>
+    </category>
+    
+    <category>
+        <pattern>SALUTATIONS</pattern>
+        <template><srai>HI</srai></template>
+    </category>
+    
+    <category>
+        <pattern>I AM *</pattern>
+        <template>
+            <think><set name="initialRecommendation">TRUE</set></think>
+            Salutations, <set name="username"><star /></set>! With my sage advice
+            at your disposal, you'll discover your computer science career path
+            in practically no time at all. Select your main interest or skill?
+            <button>
+                <text>
+                    I revel in weaving spells of software magic and creating something
+                    out of a secret lanugage only 10 types of people know.
+                </text>
+                <postback>PROGRAMMING</postback>
+            </button>
+            <button>
+                <text>
+                    I enjoy deciphering mysterious patterns and uncovering hidden
+                    treasures.
+                </text>
+                <postback>DATA ANALYSIS</postback>
+            </button>
+            <button>
+                <text>
+                    I love exploring uncharted territories of knowledge and
+                    discovering new things.
+                </text>
+                <postback>RESEARCH</postback>
+            </button>
+            <button>
+                <text>
+                    I relish in outsmarting digital bandits and protecting the
+                    digital realm from cyber threats.
+                </text>
+                <postback>SECURITY</postback>
+            </button>
+            <button>
+                <text>
+                    HULK SMASH!!!
+                </text>
+                <postback>SECURITY</postback>
+            </button>
+            <think>
+                <set name="prompt"> 
+                    Do you think this might be a good fit for you,
+                    or has my simple computer logic been thwarted by you complex
+                    humans, again?
+                    <button>
+                        <text>
+                            Thank you for your wisdom, Mr. Owlbot. 🙇
+                        </text>
+                        <postback>FAREWELL</postback>
+                    </button>
+                    <button>
+                        <text>
+                            I think your logic gates have a short circuit in them. 🤦
+                        </text>
+                        <postback>RETRY</postback>
+                    </button>
+                </set>
+            </think>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>MY NAME IS *</pattern>
+        <template>
+            <srai>
+                I AM <set name="username"><star /></set>
+            </srai>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>IM *</pattern>
+        <template>
+            <srai>
+                I AM <set name="username"><star /></set>
+            </srai>
+        </template>
+    </category>
+
+</aiml>

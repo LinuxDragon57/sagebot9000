@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    
+    <!-- Responses based on user interests -->
+    <category>
+        <pattern>PROGRAMMING</pattern>
+        <template>
+            It sounds like you might enjoy being a Software Development 
+            Engineer. They write and test code, debug programs, and collaborate 
+            with other developers to create software solutions.
+            <br/>
+            <a href="https://www.wgu.edu/career-guide/information-technology/computer-programmer-career.html">
+                Click here to learn more.
+            </a>
+            <get name="prompt" />
+            <think><set name="recommendation">PROGRAMMING</set></think>
+        </template>
+    </category>
+
+    <category>
+        <pattern>DATA ANALYSIS</pattern>
+        <template>
+            You might be interested in becoming a Data Engineer. They design and
+            manage data systems, prepare data for analytical or operational 
+            uses, and ensure data quality.
+            <br/>
+            <a href="https://www.wgu.edu/career-guide/information-technology/data-engineer-career.html">
+                Click here to learn more.
+            </a>
+            <get name="prompt" />
+            <think><set name="recommendation">DATA ANALYSIS</set></think>
+        </template>
+    </category>
+
+    <category>
+        <pattern>RESEARCH</pattern>
+        <template>
+            Consider a career as a Computer and Information Research Scientist. 
+            They invent and design new approaches to computing technology and 
+            find innovative uses for existing technology.
+            <br/>
+            <a href="https://www.wgu.edu/career-guide/information-technology/computer-scientist-career.html">
+                Click here to learn more.
+            </a>
+            <get name="prompt" />
+            <think><set name="recommendation">RESEARCH</set></think>
+        </template>
+    </category>
+
+    <category>
+        <pattern>SECURITY</pattern>
+        <template>
+            You might enjoy a role as a Vulnerability Research Engineer. They 
+            identify security vulnerabilities in systems and software, develop 
+            mitigation strategies, and enhance overall security.
+            <br/>
+            <a href="https://www.wgu.edu/career-guide/information-technology/vulnerability-research-engineer-career.html">
+                Click here to learn more.
+            </a>
+            <get name="prompt" />
+            <think><set name="recommendation">SECURITY</set></think>
+        </template>
+    </category>
+
+    <category>
+        <pattern>TESTING</pattern>
+        <template>
+            You might be suited for a career as a Software Tester. They design 
+            and execute tests to ensure software works as intended, identify 
+            bugs, and work with developers to resolve issues.
+            <br/>
+            <a href="https://www.wgu.edu/career-guide/information-technology/software-tester-career.html">
+                Click here to learn more.
+            </a>
+            <get name="prompt" />
+            <think><set name="recommendation">TESTING</set></think>
+        </template>
+    </category>
+
+</aiml>

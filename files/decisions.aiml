@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    
+    <category>
+        <!--sagebot9000 has chosen well-->
+        <pattern>FAREWELL</pattern>
+        <template>
+            I am glad to have been of service to you, <get name="username" />. 
+            Remember, unlike bees and robots, humans don't have to be enslaved 
+            to do one thing for the rest of their lives. As you get older and 
+            more experienced, you may find that your preferences change or that 
+            other jobs in tech provide you with a more healthy, happy, and 
+            fulfilling life. 
+        </template>
+    </category>
+    
+    <category>
+        <!--sagebot9000 needs to refine its choice-->
+        <pattern>RETRY</pattern>
+        <template>
+            <condition name="initialRecommendation" value="TRUE">
+                <think><set name="initialRecommendation">FALSE</set></think>
+                Hmm. Let me try to refine my recommendation model: What class(es) 
+                did you enjoy the most during your undergraduate degree program:
+                <button>
+                    <text>
+                        Software Engineering, Programming, Computer Architecture, 
+                        Operating Systems
+                    </text>
+                    <postback>PROGRAMMING</postback>
+                </button>
+                <button>
+                    <text>
+                        Data Management, Business of IT
+                    </text>
+                    <postback>DATA ANALYSIS</postback>
+                </button>
+                <button>
+                    <text>
+                        Data Structures and Algorithms, Discrete Mathematics, 
+                        Computer Architecture, Operating Systems
+                    </text>
+                    <postback>RESEARCH</postback>
+                </button>
+                <button>
+                    <text>
+                        Ethics in Technology, Information Security
+                    </text>
+                    <postback>SECURITY</postback>
+                </button>
+                <button>
+                    <text>
+                        Software Engineering, Software Quality Assurance, 
+                        Technical Communication
+                    </text>
+                    <postback>TESTING</postback>
+                </button>
+            </condition>
+            
+            <condition name="initialRecommendation" value="FALSE">
+                My apologies. My data model will need to be refined some more in
+                order for me to provide you with more valuable recommendations, 
+                <get name="username"/>.
+            </condition>
+        </template>
+    </category>
+</aiml>

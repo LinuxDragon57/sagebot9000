@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+  <category>
+      <pattern>*</pattern>
+      <template>
+          I'm sorry, I didn't understand that. English isn't my first language;
+          that would be Artificial Intelligence Markup Language (AIML). If you're
+          stuck, might I suggest a pleasant greeting to get started?
+      </template>
+  </category>
+</aiml>
